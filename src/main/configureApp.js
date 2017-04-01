@@ -5,6 +5,8 @@ export default (app) => {
   app.commandLine.appendSwitch('enable-overlay-scrollbar', '1');
   app.commandLine.appendSwitch('enable-use-zoom-for-dsf', 'false');
   app.commandLine.appendSwitch('disable-gpu', '1');
+  // Enables speaker fill on some systems
+  app.commandLine.appendSwitch('try-supported-channel-layouts', '1');
   // DEV: Enables the HTML5 WebAudio API extensions to allow selection of sinkId
   //      --> Choosing audio output device
   app.commandLine.appendSwitch('enable-experimental-web-platform-features', '1');
